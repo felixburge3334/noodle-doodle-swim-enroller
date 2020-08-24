@@ -3,7 +3,7 @@
     <!--
       Name of the app on GAE
     -->
-    <application>noodle-doodle-swim-enroller </application>
+    <application>noodle-doodle-swimer-enroller</application>
     <version>1</version>
     <runtime>java8</runtime>
     <!--
