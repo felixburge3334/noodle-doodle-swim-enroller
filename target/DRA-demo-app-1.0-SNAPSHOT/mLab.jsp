@@ -24,10 +24,10 @@
             <form class="mlab-form" action="ConnServlet" method="post" target="_parent">
                 <p class="form_title">MongoDB Atlas Login:  </p>&emsp;<span class="error"> <c:if test="${status!=null}"><c:out value="${status}"/></c:if></span>
                     <div class="form-group" id="username">
-                        <input class="form-input" name="adminemail" id="adminemail" placeholder="MongoDB ID">                                       
+                        <input class="form-input" name="adminemail" id="noodledoodle" placeholder="MongoDB ID">                                       
                     </div>
                     <div class="form-group" id="password">
-                        <input type="password" class="form-input" name ="adminpassword" id="adminpassword" placeholder="Password">
+                        <input type="password" class="form-input" name ="asd631sU" id="adminpassword" placeholder="Password">
                     </div>
                     <div class="form-group" id="collection">
                         <input type="text" class="form-input" name ="role" id="role" placeholder="Role">

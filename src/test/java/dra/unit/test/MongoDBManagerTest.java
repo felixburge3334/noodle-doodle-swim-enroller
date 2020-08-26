@@ -13,7 +13,7 @@ import org.junit.runners.MethodSorters;
  * @author George
  */
 
-/*
+
 
 @FixMethodOrder(MethodSorters.JVM)
 public class MongoDBManagerTest extends TestCase{
@@ -23,7 +23,7 @@ public class MongoDBManagerTest extends TestCase{
     /**
      * create and instance of MongoDBManager
      */
-/*
+
     @Before
     @Override
     public void setUp() {
@@ -35,7 +35,7 @@ public class MongoDBManagerTest extends TestCase{
      * test if the create and add methods work by randomly adding 
      * a user to dra-db.users then reading this user by email-password
      */
-/*
+
     @Test
     public void testCreateRead() {
         System.out.println(" >> Testing Create/Read operations with Mongo DB: ");
@@ -51,7 +51,7 @@ public class MongoDBManagerTest extends TestCase{
     /**
      * Print the dra-db.users contents to verify that new user has been added
      */
-/*
+
     @Test
     public void testCollection() {
         System.out.println(" >> Verifying and printing the updated Mongo DB database: ");
@@ -59,4 +59,4 @@ public class MongoDBManagerTest extends TestCase{
     }  
     
 }
-*/
+
