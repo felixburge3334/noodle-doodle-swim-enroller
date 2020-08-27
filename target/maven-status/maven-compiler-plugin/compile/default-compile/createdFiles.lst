@@ -1,2 +1,6 @@
-noodledoodle\noodledoodleswimenroller\JAXRSConfiguration.class
+dra\demo\model\dao\MongoDBManager.class
+dra\demo\controller\ConnServlet.class
+dra\demo\model\dao\MongoDB.class
 noodledoodle\noodledoodleswimenroller\resources\JavaEE8Resource.class
+noodledoodle\noodledoodleswimenroller\JAXRSConfiguration.class
+dra\demo\model\dao\PrettyJson.class
