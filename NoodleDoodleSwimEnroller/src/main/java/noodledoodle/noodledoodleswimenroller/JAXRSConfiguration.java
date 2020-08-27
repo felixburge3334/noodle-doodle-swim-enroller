@@ -1,4 +1,4 @@
-package noodledoodle.noodledoodleswimerenroller;
+package noodledoodle.noodledoodleswimenroller;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
