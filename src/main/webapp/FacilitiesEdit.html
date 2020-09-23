@@ -9,6 +9,9 @@
 <body>
     <h1>Edit Facility</h1>
     <form>
+        <button formaction="Facilities.html" class="back">Cancel</button>
+    </form>
+    <form>
         <label>Facility name:</label><br>
         <input type="text"><br>
         <label>Facility Quantity:</label><br>
@@ -17,9 +20,19 @@
         <textarea rows="4" cols="50">
         </textarea>
     </form>
-    <form>
-        <button formaction="Facilities.html" class="block">Submit</button>
-    </form>
+    <table>
+        <td>
+            <form>
+                <button formaction="Facilities.html" class="del">Delete</button>
+        </td>
+        </form>
+        <td>
+            <form>
+                <button formaction="Facilities.html" class="block">Submit</button>
+            </form>
+        </td>
+    </table>
+
 </body>
 
 </html>

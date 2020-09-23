@@ -10,6 +10,7 @@ h1{
 
 table{
     align-self: center;
+    width: 100%;
 }
 
 th{
@@ -45,4 +46,22 @@ label {
     font-size: 20px;
     text-align: center;
     color:#3949ab;
+}
+
+.del {
+    position: relative;
+    background-color: rgb(189, 0, 0);
+    padding: 15px 30px;
+    width: 100%;
+}
+
+.del:hover , .back:hover{
+   background-color: red; 
+}
+
+.back{
+    position: relative;
+    background-color: rgb(189, 0, 0);
+    padding: 10px 30px;
+    width: 25%;
 }
