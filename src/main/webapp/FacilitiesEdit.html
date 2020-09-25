@@ -23,16 +23,21 @@
     <table>
         <td>
             <form>
-                <button formaction="Facilities.html" class="del">Delete</button>
+                <button onclick="confirmDelete()" formaction="Facilities.html" class="del">Delete</button>
+            </form>
         </td>
-        </form>
         <td>
             <form>
                 <button formaction="Facilities.html" class="block">Submit</button>
             </form>
         </td>
     </table>
-
 </body>
+
+<script>
+    function confirmDelete() {
+        confirm("Are you Sure?");
+    }
+</script>
 
 </html>
