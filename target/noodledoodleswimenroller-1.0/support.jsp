@@ -87,8 +87,7 @@
                             <td class="pullright">
                                 27
                             </td>
-                        </tr>
-                        
+                        </tr>                       
                     </table>
                 </div>
             </div>
