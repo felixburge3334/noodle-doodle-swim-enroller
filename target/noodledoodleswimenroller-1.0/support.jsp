@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 bar forumBackground">
-                    <a>Home </a>             
+                    <a> </a>             
                 </div>
             </div>
                 <div id="category_1" class="row forumBackground">
