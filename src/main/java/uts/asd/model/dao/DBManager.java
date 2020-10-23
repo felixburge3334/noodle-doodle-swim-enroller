@@ -9,6 +9,7 @@ package uts.asd.model.dao;
  *
  * @author Fuxin Bi
  */
+import static java.lang.Boolean.parseBoolean;
 import uts.asd.model.Student;
 import java.sql.*;
 import java.text.ParseException;
@@ -21,6 +22,7 @@ import javax.swing.text.DateFormatter;
 import uts.asd.model.CustomerAccessLogBean;
 import uts.asd.model.CustomerBean;
 import uts.asd.model.Supplier;
+import uts.asd.model.Event;
 
 /* 
 * DBManager is the primary DAO class to interact with the database. 
@@ -449,4 +451,115 @@ public class DBManager {
         }     
         return oneline;
     }
+     
+     //Event INFO
+        //find event from db
+    
+    public Event findEvent(String name, Date date) throws SQLException {   
+        String query = "SELECT * FROM ASDUSER.EVENT WHERE Event_Name='"+name+"' AND Event_Date = '"+date+"':";
+        ResultSet rs = st.executeQuery(query);
+        Event event = null;
+        while(rs.next()){
+            int Id = rs.getInt(1);
+            System.out.println(Id);
+            String Name = rs.getString(2);
+            Date Date = rs.getDate(3);
+            String Description = rs.getString(4);
+            Boolean Visibility = parseBoolean(rs.getString(5));
+            event = new Event (Id, Name, Date, Description, Visibility); 
+            return event;   
+        }       
+       return null;   
+    } 
+     public ArrayList<Event> findEvent(Date date) throws SQLException 
+     {   
+        String query = "SELECT * FROM ASDUSER.EVENT WHERE Event_Date='"+date+"'";
+        ResultSet rs = st.executeQuery(query);
+        ArrayList<Event> result = new ArrayList();
+        while(rs.next())
+        {
+            int Id = rs.getInt(1);
+            System.out.println(Id);
+            String Name = rs.getString(2);
+            Date Date = rs.getDate(3);
+            String Description = rs.getString(4);
+            Boolean Visibility = parseBoolean(rs.getString(5));
+            if(Date.equals(date))
+            {
+                result.add(new Event(Id, Name, Date, Description, Visibility));
+            }
+        }
+        return result;
+     }
+     
+     public Event getEvent(int Event_id) throws SQLException {   
+        Event event = null;
+        //(Id, Name, Date, Description, Visibility) 
+            String query = "SELECT * FROM ASDUSER.EVENT WHERE Event_ID="+Event_id+"";
+            ResultSet rs = st.executeQuery(query);
+            while(rs.next()){
+                int Id = rs.getInt(1);
+                System.out.println(Id);
+                String Name = rs.getString(2);
+                Date Date = rs.getDate(3);
+                String Description = rs.getString(4);
+                Boolean Visibility = parseBoolean(rs.getString(5));
+                System.out.println("Event Name: " +Name);
+                event = new Event (Id, Name, Date, Description, Visibility); 
+            } return event;     
+    }
+     
+     public void deleteEvent(Event evf) throws SQLException{
+        st.executeUpdate("DELETE FROM ASDUSER.EVENT WHERE Event_ID =" +evf.getId());
+  
+    }
+
+     public void updateEvent(Event evf) throws SQLException {
+        String values=
+              
+              "Event_Name = '"+evf.getName()+"',"+
+              "Event_Date = '"+evf.getDate()+"',"+
+              "Event_Description = '"+evf.getDescription()+"',"+
+              "Event_Visibility = '"+evf.isVisibility()+"'"
+              ;
+        System.out.println(values);
+        st.executeUpdate("UPDATE ASDUSER.EVENT SET "+values+" WHERE Event_ID ="+evf.getId());   
+        System.out.println("UPDATE ASDUSER.EVENT SET "+values+" WHERE Event_ID ="+evf.getId());
+
+    }  
+     
+       //Add a event into the db
+    public void addEvent (Event evf) throws SQLException {
+       String values = 
+               
+               "'"+evf.getName() + "',"+
+              "'"+evf.getDate() + "',"+
+               "'"+evf.getDescription() + "',"+
+               "'"+evf.isVisibility() + "'";
+
+
+       st.executeUpdate("INSERT INTO ASDUSER.EVENT(Event_Name,Event_Date,Event_Description,Event_Visibility) VALUES("+values+")");
+       System.out.println("INSERT INTO ASDUSER.EVENT(Event_Name,Event_Date,Event_Description,Event_Visibility) VALUES("+values+")");
+
+    }
+    
+    public ArrayList<Event> fetchEventList() throws SQLException
+        {
+
+
+            String fetch = "SELECT * FROM ASDUSER.EVENT";
+
+            ResultSet rs = st.executeQuery(fetch);
+            ArrayList<Event> temp1 = new ArrayList();
+            while(rs.next()){
+            int Id = rs.getInt(1);
+                System.out.println(Id);
+                String Name = rs.getString(2);
+                Date Date = rs.getDate(3);
+                String Description = rs.getString(4);
+                Boolean Visibility = parseBoolean(rs.getString(5));
+            temp1.add(new Event(Id, Name, Date, Description, Visibility));
+        } 
+            return temp1;
+        }
 }
