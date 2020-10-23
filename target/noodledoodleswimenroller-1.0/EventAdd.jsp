@@ -29,15 +29,15 @@
                          <form method="POST" action="AddNewEvent">
                              <input type="hidden" id="stats" name="Status" value="1">
                      <table class = "table">
-                         <tr><td>Event Name:</td><td><input type="text" placeholder="Enter Name" name="Name"></td></tr>
-                         <tr><td>Event Date:</td><td><input type="date" name="Date"></td></tr>
-                         <tr><td>Event Description:</td><td><input type="text" placeholder="Enter Description" name="Description"></td></tr>
+                         <tr><td>Event Name:</td><td><input type="text" class="form-control" placeholder="Enter Name" name="Name"></td></tr>
+                         <tr><td>Event Date:</td><td><input type="date" class="form-control" name="Date"></td></tr>
+                         <tr><td>Event Description:</td><td><input type="text" class="form-control" placeholder="Enter Description" name="Description"></td></tr>
                          <tr><td><label for="Visibility">Visibility</label></td>
                             <td><select id="Visibility" class="form-control"  name="Visibility">
                                 <option value="TRUE">Public</option>
                                 <option value="FALSE">Hidden</option>
                             </select></td></tr>
-                         <tr><td></td><td><input type="submit" value="Create"> </td></tr>
+                         <tr><td></td><td><input type="submit" class="btn btn-primary" style = "width:80px;height:45px;" value="Create"> </td></tr>
                      </table>
                      </div>
                 </div>

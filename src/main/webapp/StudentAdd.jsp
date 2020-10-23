@@ -29,11 +29,11 @@
                          <form method="POST" action="AddNewStudent">
                              <input type="hidden" id="stats" name="Status" value="1">
                      <table class = "table">
-                         <tr><td>Name:</td><td><input type="text" placeholder="Enter Name" name="FullName"></td></tr>
-                         <tr><td>Date of Birth:</td><td><input type="date" placeholder="Enter DOB" name="Date"></td></tr>
-                         <tr><td>Email:</td><td><input type="email" placeholder="Enter Email" name="Email"></td></tr>
-                         <tr><td>Address:</td><td><input type="text" placeholder="Enter Address" name="Address"></td></tr>
-                         <tr><td>Phone:</td><td><input type="text" placeholder="Enter Phone" name="Phone"></td></tr>
+                         <tr><td>Name:</td><td><input type="text" class="form-control" placeholder="Enter Name" name="FullName"></td></tr>
+                         <tr><td>Date of Birth:</td><td><input type="date" class="form-control" placeholder="Enter DOB" name="Date"></td></tr>
+                         <tr><td>Email:</td><td><input type="email" class="form-control" placeholder="Enter Email" name="Email"></td></tr>
+                         <tr><td>Address:</td><td><input type="text" class="form-control" placeholder="Enter Address" name="Address"></td></tr>
+                         <tr><td>Phone:</td><td><input type="text" class="form-control" placeholder="Enter Phone" name="Phone"></td></tr>
                          <tr><td><label for="Title">Title</label></td>
                             <td><select id="Title" class="form-control"  name="Title">
                                 <option value="Mr">Mr</option>
@@ -41,8 +41,8 @@
                                 <option value="Ms">Ms</option>
                                 <option value="Miss">Miss</option>
                             </select></td></tr>
-                         <tr><td>Password:</td><td><input type="text" placeholder="Enter Password" name="Password"></td></tr>
-                         <tr><td></td><td><input type="submit" value="Register"> </td></tr>
+                         <tr><td>Password:</td><td><input type="text" class="form-control" placeholder="Enter Password" name="Password"></td></tr>
+                         <tr><td></td><td><input type="submit" class="btn btn-primary" style = "width:80px;height:45px;" value="Register"> </td></tr>
                      </table>
                      </div>
                 </div>
