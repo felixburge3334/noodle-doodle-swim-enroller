@@ -40,16 +40,16 @@
                             <input type="hidden" id="SID" name="Id" value="<%= current.getId()%>">
                         <table>
                             
-                            <tr><td>Event Name: </td><td><input type="text" value= "<%= current.getName().toString() %>" placeholder="Enter Company Name" name="Name"></td></tr>
-                            <tr><td>Event Date: </td><td><input type="date" value= "<%= current.getDate().toString() %>" placeholder="Enter DOB" name="Date"></td></tr>
-                            <tr><td>Event Description: </td><td><input type="text" value= "<%= current.getDescription().toString() %>" placeholder="Enter Description" name="Description"></td></tr> 
+                            <tr><td>Event Name: </td><td><input type="text" class="form-control" value= "<%= current.getName().toString() %>" placeholder="Enter Event Name" name="Name"></td></tr>
+                            <tr><td>Event Date: </td><td><input type="date" class="form-control" value= "<%= current.getDate().toString() %>" placeholder="Enter Date" name="Date"></td></tr>
+                            <tr><td>Event Description: </td><td><input type="text" class="form-control" value= "<%= current.getDescription().toString() %>" placeholder="Enter Description" name="Description"></td></tr> 
                             <tr><td><label for="Visibility">Event Visibility:</label></td>
-                            <td><select id="Visibility" class="form-control"  " name="Visibility">
+                            <td><select id="Visibility" class="form-control" name="Visibility">
                                 <option value="TRUE">Public</option>
                                 <option value="FALSE">Hidden</option>
                             </select></td></tr>
+                               <tr><td></td><td><input class="button" type="submit" style = "width:80px;height:45px;" value="Update" role="button" ></td></tr> 
                         </table>
-                               <input class="button" type="submit" value="Update" role="button" > 
                         </form>
                     </div>
                 </div>

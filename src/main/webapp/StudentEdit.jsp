@@ -63,7 +63,7 @@
                             <tr><td>Title:</td><td><input type="text" value=<%= result1.get(7) %> name="Title"></td></tr>
                             <tr><td>Password:</td><td><input type="text" value=<%= result1.get(8) %> name="Password"></td></tr>
                             <%}}%>
-                            <tr><td></td><td><input type="submit" value="Delete"> <input class="btn  btn-primary btn-lg" type="submit" value="Update"> </td></tr>
+                            <tr><td></td><td><input type="submit"  value="Delete"> <input class="btn  btn-primary btn-lg" style = "width:80px;height:45px;" type="submit" value="Update"> </td></tr>
                         </table>
                 </div>
             </div>

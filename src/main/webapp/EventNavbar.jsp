@@ -10,7 +10,7 @@
         <a href="index.jsp"><div class="nav-link nav-fill navButt"><h3>Home</h3></div></a>
     </li>
     <li class="nav-item">
-        <a href="EventInfo"><div class="nav-link nav-fill navButt"><h5>View all event</h5></div></a>
+        <a href="EventInfo"><div class="nav-link nav-fill navButt"><h5>View all events</h5></div></a>
     </li>
     <li class="nav-item">
         <a href="EventAdd.jsp"><div class="nav-link nav-fill navButt"><h5>Create an event</h5></div></a>

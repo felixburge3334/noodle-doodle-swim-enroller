@@ -55,16 +55,16 @@
                                     ArrayList result1 = (ArrayList)itr.next();
                             %>
                             
-                            <tr><td>Event Name:</td><td><input type="text" value=<%= result1.get(2) %> name="Name"></td></tr>
-                            <tr><td>Event Date:</td><td><input type="date" value=<%= result1.get(3) %> name="Date"></td></tr>
-                            <tr><td>Event Description:</td><td><input type="text" value=<%= result1.get(4) %> name="Description"></td></tr>
+                            <tr><td>Event Name:</td><td><input type="text" class="form-control" value=<%= result1.get(2) %> name="Name"></td></tr>
+                            <tr><td>Event Date:</td><td><input type="date" class="form-control" value=<%= result1.get(3) %> name="Date"></td></tr>
+                            <tr><td>Event Description:</td><td><input type="text" class="form-control" value=<%= result1.get(4) %> name="Description"></td></tr>
                             <tr><td><label for="Visibility">Event Visibility:</label></td>
                             <td><select id="Visibility" class="form-control"  name="Visibility">
                                 <option value="TRUE">Public</option>
                                 <option value="FALSE">Hidden</option>
                             </select></td></tr>
                             <%}}%>
-                            <tr><td></td><td><input type="submit" value="Delete"> <input class="btn  btn-primary btn-lg" type="submit" value="Update"> </td></tr>
+                            <tr><td></td><td><input type="submit" value="Delete"> <input class="btn  btn-primary btn-lg" style = "width:80px;height:45px;" type="submit" value="Update"> </td></tr>
                         </table>
                 </div>
             </div>
