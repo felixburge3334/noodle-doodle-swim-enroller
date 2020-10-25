@@ -1,0 +1,107 @@
+<<<<<<< HEAD
+/* 
+Author: Yushania
+Created: 19/09/2020
+*/
+
+=======
+>>>>>>> Max
+body {
+    background-color: #e8eaf6;
+}
+
+<<<<<<< HEAD
+h1 {
+=======
+h1{
+>>>>>>> Max
+    color: #fff;
+    background-color: #7986cb;
+    text-align: center;
+}
+
+<<<<<<< HEAD
+label {
+    font-size: 20px;
+    text-align: center;
+    color:#3949ab;
+}
+
+table {
+=======
+table{
+>>>>>>> Max
+    align-self: center;
+    width: 100%;
+}
+
+<<<<<<< HEAD
+th {
+=======
+th{
+>>>>>>> Max
+    text-align: left;
+    border-bottom: 2px solid #1a237e;
+    font-size: 20px;
+    color: #fff;
+    background-color: #5c6bc0;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #1a237e;
+}
+
+button {
+    align-self: center;
+    width: 100%;
+    color: #fff;
+    background-color: #303f9f;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+.block:hover {
+    background-color: #5c6bc0;
+    color: #fff;
+}
+
+<<<<<<< HEAD
+=======
+label {
+    font-size: 20px;
+    text-align: center;
+    color:#3949ab;
+}
+
+>>>>>>> Max
+.del {
+    position: relative;
+    background-color: rgb(189, 0, 0);
+    padding: 15px 30px;
+    width: 100%;
+}
+
+<<<<<<< HEAD
+.back {
+=======
+.del:hover , .back:hover{
+   background-color: red; 
+}
+
+.back{
+>>>>>>> Max
+    position: relative;
+    background-color: rgb(189, 0, 0);
+    padding: 10px 30px;
+    width: 25%;
+<<<<<<< HEAD
+}
+
+.del:hover , .back:hover {
+   background-color: red; 
+=======
+>>>>>>> Max
+}
