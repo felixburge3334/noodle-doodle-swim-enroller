@@ -9,28 +9,63 @@
 <body>
     <h1>Edit Enquiry</h1>
     <form>
-        <button formaction="Enquiries.html" class="back">Cancel</button>
+        <button formaction="Enquiries.html" class="back">Back</button>
     </form>
-        <h2>Enquiry Type:</h2>
-        <p>Administration</p><br>
-        <h2>Enquiry Description</h2><br>
-        <p>Can i update my personal details for the system</p><br>
-        <h2>Status</h2><br>
-        <form>
-            <input type="radio" id="Incomplete" name="status" value="Incomplete" checked>
-            <label for="Incomplete">Incomplete</label>  
-            <input type="radio" id="In-progress" name="status" value="In-progress">
-            <label for="In-progress">In-Progress</label> 
-            <input type="radio" id="Resolved" name="status" value="Resolved">
-            <label for="Resolved">Resolved</label>          
-        </form> 
-        <h2>Comments</h2>
-            <textarea rows="4" cols="50">
-            </textarea>
-            <form>
-                <button formaction="Enquiries.html" class="block">Submit</button>
-            </form>
-        </td>
+    <table>
+        <tr>
+            <th>UserID</th>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <th>Enquiry Type</th>
+            <td>Administration</td>
+        </tr>
+        <tr>
+            <th>Enquiry Description</th>
+            <td>Can i update my personal details for the system</td>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <td>
+                <form>
+                    <input type="radio" id="Open" name="status" value="Open" checked>
+                    <label for="Open">Open</label>
+                    <input type="radio" id="Resolved" name="status" value="Resolved">
+                    <label for="Resolved">Resolved</label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <th>Notify User</th>
+            <td>
+                <form>
+                    <input type="radio" id="No" name="notify" value="No" checked>
+                    <label for="No">No</label>
+                    <input type="radio" id="Yes" name="notify" value="Yes">
+                    <label for="Yes">Yes</label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <th>Known Issues</th>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <th>Comments</th>
+            <td>
+                <textarea rows="4" cols="100"></textarea>
+            </td>
+        </tr>
+    </table>
+    <form>
+        <button onclick="confirmSubmission()" formaction="Enquiries.html" class="block">Submit</button>
+    </form>
 </body>
 
 </html>
+
+<script>
+    function confirmSubmission() {
+        confirm("Close Enquiry?");
+    }
+</script>
